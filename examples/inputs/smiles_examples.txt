@@ -1,0 +1,85 @@
+# DruGUI Example SMILES Input
+# Format: SMILES [TAB name]
+# Lines starting with # are comments
+
+# EGFR inhibitors (positive controls)
+Cc1ccc(Nc2nccc(-c3cccnc3)n2)cc1	Erlotinib
+CC(C)Nc1ccc(-c2nccc3[nH]ccc23)nc1	Gefitinib
+COc1ccc2c(c1)ncs2	Osimertinib
+CN1C=C(C2=CC=C(Cl)C=C2)C3=CC=CC=C13	Afatinib
+CCOC(=O)Nc1ccc(c2nc3ccc(C#N)cn3n2)cc1	AZD3759
+
+# Known kinase inhibitors (related chemotypes)
+Cc1cc(C(=O)NCCC2CCCN2C)nc(-c2ccnc(N)c2)n1	Lapatinib
+CC(C)N(C)C(=O)c1c(-c2ccccc2F)ncn1C1CC1c2ccccn2	Dasatinib
+CC(=O)Oc1ccccc1C(=O)Nc1ccncc1N	Erlo Analog 1
+
+# Drug-like molecules from ZINC (random selection)
+Cc1cc(ccc1)C(=O)Nc2ccnc(NCCO)n2	ZM1
+CC(C)C1CCC(C1)C(=O)Nc2ccnc(N)n2	ZM2
+Cc1ccc(C(=O)Nc2ccncc2N)cc1	ZM3
+COc1ccc(C(=O)Nc2ccncc2N)cc1	ZM4
+CC1CCC(C1)C(=O)Nc1ccnc(N)n1	ZM5
+
+# More diverse structures
+c1ccncc1C(=O)Nc2ccnc(NCCCN)n2	ZM6
+CC(C)CC(=O)Nc1ccnc(NCCO)n1	ZM7
+Cc1cc(C)nc(NCC(=O)Nc2ccncc2)n1	ZM8
+c1ccc(C(=O)Nc2ccncc2N)cc1	ZM9
+CC1CCCN1C(=O)Cc2ccnc(N)n2	ZM10
+
+# Additional kinase inhibitor scaffolds
+Cc1ccc(Nc2nccc(C3CCCCC3)n2)cc1	ZM11
+CC(C)Nc1ccc(-c2ncnc3c2cccc3Cl)nc1	ZM12
+COc1ccc(C(=O)NCCCN2CCCC2)cc1	ZM13
+Cc1ccc(Nc2nccc(C3CCNCC3)n2)cc1	ZM14
+CC1CCN(C1)C(=O)Nc1ccnc(N)n1	ZM15
+
+# More ZINC-like drug fragments
+CC(=O)Nc1ccc(NCCO)cc1	ZM16
+Cc1cc(C)cc(C(=O)NCCCN)n1	ZM17
+c1ccc(NCC(=O)Nc2ccncc2)cc1	ZM18
+CC1CCC(C1)C(=O)NCCCN	ZM19
+COc1ccc(C(=O)NCCCN)cc1	ZM20
+
+# Random diverse drug-like molecules
+CC(C)Cc1ccc(NCC(=O)Nc2ccncc2)cc1	ZM21
+Cc1ccc(C(=O)NCCN2CCOCC2)cc1	ZM22
+CC1CCCN1C(=O)Cc2ccccc2	ZM23
+c1ccc(C2CCCN2C(=O)Cc2ccccc2)cc1	ZM24
+CC(C)N(CC)C(=O)c1cccnc1	ZM25
+
+# P450 substrates/modulators
+CC(C)CC(=O)Nc1ccc2ccccc2n1	ZM26
+COc1ccc(C(=O)NCCN)cc1	ZM27
+Cc1ccc(C(=O)NCCC)nc1	ZM28
+CC(=O)Nc1ccc(NCC)nc1	ZM29
+c1ccc(NCC(=O)Nc2cccnc2)cc1	ZM30
+
+# More diverse chemotypes
+CC1CCCC1C(=O)Nc1ccnc(N)n1	ZM31
+COc1cccc(C(=O)NCCCN)n1	ZM32
+CC(C)C1CCC(C1)C(=O)Nc1ccncn1	ZM33
+Cc1ccc(NCC(=O)Nc2ccncn1)n2	ZM34
+c1ccc(N2CCCCC2C(=O)Nc2ccncc2)cc1	ZM35
+
+# Additional drug-like molecules
+CC(C)N(C)C(=O)Cc1ccccc1	ZM36
+COc1ccc(C(=O)NCC)nc1	ZM37
+Cc1cc(C)cc1C(=O)NCCCN	ZM38
+CC1CCC(C1)C(=O)Nc1ccncc1	ZM39
+c1cc(NCC(=O)Nc2ccncc2)ccn1	ZM40
+
+# Non-specific kinase inhibitor-like
+CC(=O)Nc1ccnc(NCCCO)n1	ZM41
+COc1ccc(C(=O)NCCN2CCCCC2)cc1	ZM42
+CC1CCN(C1)C(=O)Nc1ccncn1	ZM43
+Cc1ccc(Nc2ncnc3cc(Cl)ccc23)n1	ZM44
+CC(C)Nc1ccc(C(=O)Nc2ccncc2)nc1	ZM45
+
+# More EGFR-targeted
+CCOc1ccc(Nc2nccc(C#N)cn2)cc1	ZM46
+CC1CCC(C1)C(=O)Nc1ccc(N)n1	ZM47
+COc1ccc(C(=O)NCCCN2CCOCC2)cc1	ZM48
+Cc1ccc(C(=O)NCCCN2CCCCC2)cc1	ZM49
+CC(C)C(=O)Nc1ccnc(NCC)n1	ZM50

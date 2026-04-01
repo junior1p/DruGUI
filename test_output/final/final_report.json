@@ -1,0 +1,222 @@
+{
+  "target": "6JX0",
+  "total_candidates": 58,
+  "valid_ligands": 53,
+  "invalid_smiles": 5,
+  "passed_filters": 20,
+  "top_candidates": [
+    {
+      "rank": 1,
+      "name": "AZD3759",
+      "smiles": "CCOC(=O)Nc1ccc(c2nc3ccc(C#N)cn3n2)cc1",
+      "vina_score": -9.01,
+      "composite_score": 0.9264,
+      "admet": {
+        "MW": 307.31,
+        "LogP": 2.84,
+        "HBA": 6,
+        "HBD": 1,
+        "TPSA": 92.31,
+        "Caco2_permeability": -4.962,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1.53,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 2,
+      "name": "ZM43",
+      "smiles": "CC1CCN(C1)C(=O)Nc1ccncn1",
+      "vina_score": -5.58,
+      "composite_score": 0.6046,
+      "admet": {
+        "MW": 206.25,
+        "LogP": 1.35,
+        "HBA": 3,
+        "HBD": 1,
+        "TPSA": 58.12,
+        "Caco2_permeability": -4.791,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 3,
+      "name": "ZM37",
+      "smiles": "COc1ccc(C(=O)NCC)nc1",
+      "vina_score": -5.66,
+      "composite_score": 0.5916,
+      "admet": {
+        "MW": 180.21,
+        "LogP": 0.84,
+        "HBA": 3,
+        "HBD": 1,
+        "TPSA": 51.22,
+        "Caco2_permeability": -4.756,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1.16,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 4,
+      "name": "ZM9",
+      "smiles": "c1ccc(C(=O)Nc2ccncc2N)cc1",
+      "vina_score": -5.56,
+      "composite_score": 0.5842,
+      "admet": {
+        "MW": 213.24,
+        "LogP": 1.92,
+        "HBA": 3,
+        "HBD": 2,
+        "TPSA": 68.01,
+        "Caco2_permeability": -4.84,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1.13,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 5,
+      "name": "Osimertinib",
+      "smiles": "COc1ccc2c(c1)ncs2",
+      "vina_score": -5.7,
+      "composite_score": 0.5827,
+      "admet": {
+        "MW": 165.22,
+        "LogP": 2.3,
+        "HBA": 3,
+        "HBD": 0,
+        "TPSA": 22.12,
+        "Caco2_permeability": -4.611,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 6,
+      "name": "ZM36",
+      "smiles": "CC(C)N(C)C(=O)Cc1ccccc1",
+      "vina_score": -5.63,
+      "composite_score": 0.5747,
+      "admet": {
+        "MW": 191.27,
+        "LogP": 2.1,
+        "HBA": 1,
+        "HBD": 0,
+        "TPSA": 20.31,
+        "Caco2_permeability": -4.602,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 7,
+      "name": "ZM25",
+      "smiles": "CC(C)N(CC)C(=O)c1cccnc1",
+      "vina_score": -5.62,
+      "composite_score": 0.5735,
+      "admet": {
+        "MW": 192.26,
+        "LogP": 1.95,
+        "HBA": 2,
+        "HBD": 0,
+        "TPSA": 33.2,
+        "Caco2_permeability": -4.666,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 8,
+      "name": "ZM28",
+      "smiles": "Cc1ccc(C(=O)NCCC)nc1",
+      "vina_score": -5.67,
+      "composite_score": 0.5709,
+      "admet": {
+        "MW": 178.24,
+        "LogP": 1.53,
+        "HBA": 2,
+        "HBD": 1,
+        "TPSA": 41.99,
+        "Caco2_permeability": -4.71,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1.06,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 9,
+      "name": "ZM29",
+      "smiles": "CC(=O)Nc1ccc(NCC)nc1",
+      "vina_score": -5.66,
+      "composite_score": 0.5708,
+      "admet": {
+        "MW": 179.22,
+        "LogP": 1.47,
+        "HBA": 3,
+        "HBD": 2,
+        "TPSA": 54.02,
+        "Caco2_permeability": -4.77,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1.31,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    },
+    {
+      "rank": 10,
+      "name": "ZM23",
+      "smiles": "CC1CCCN1C(=O)Cc2ccccc2",
+      "vina_score": -5.59,
+      "composite_score": 0.57,
+      "admet": {
+        "MW": 203.29,
+        "LogP": 2.24,
+        "HBA": 1,
+        "HBD": 0,
+        "TPSA": 20.31,
+        "Caco2_permeability": -4.602,
+        "hERG_risk": "LOW",
+        "AMES": "Non-mutagenic"
+      },
+      "sa_score": 1,
+      "sa_category": "Easy",
+      "passes_lipinski": true,
+      "passes_pains": true
+    }
+  ],
+  "execution_time_seconds": 28.362383,
+  "environment": "druGUI v1.0",
+  "created_at": "2026-04-01T12:10:36.774067"
+}

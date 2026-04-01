@@ -1,0 +1,11 @@
+rank,name,smiles,vina_score,composite_score,MW,LogP,TPSA,SA_score,passes_lipinski,passes_pains
+1,AZD3759,CCOC(=O)Nc1ccc(c2nc3ccc(C#N)cn3n2)cc1,-9.01,0.9264,307.31,2.84,92.31,1.53,True,True
+2,ZM43,CC1CCN(C1)C(=O)Nc1ccncn1,-5.58,0.6046,206.25,1.35,58.12,1.0,True,True
+3,ZM37,COc1ccc(C(=O)NCC)nc1,-5.66,0.5916,180.21,0.84,51.22,1.16,True,True
+4,ZM9,c1ccc(C(=O)Nc2ccncc2N)cc1,-5.56,0.5842,213.24,1.92,68.01,1.13,True,True
+5,Osimertinib,COc1ccc2c(c1)ncs2,-5.7,0.5827,165.22,2.3,22.12,1.0,True,True
+6,ZM36,CC(C)N(C)C(=O)Cc1ccccc1,-5.63,0.5747,191.27,2.1,20.31,1.0,True,True
+7,ZM25,CC(C)N(CC)C(=O)c1cccnc1,-5.62,0.5735,192.26,1.95,33.2,1.0,True,True
+8,ZM28,Cc1ccc(C(=O)NCCC)nc1,-5.67,0.5709,178.24,1.53,41.99,1.06,True,True
+9,ZM29,CC(=O)Nc1ccc(NCC)nc1,-5.66,0.5708,179.22,1.47,54.02,1.31,True,True
+10,ZM23,CC1CCCN1C(=O)Cc2ccccc2,-5.59,0.57,203.29,2.24,20.31,1.0,True,True
