@@ -8,9 +8,19 @@ dependencies:
   - pandas=2.2.2
   - numpy=1.26.4
   - scikit-learn=1.5.0
-  - autodock-vina=1.2.28
-  - openbabel=3.1.1
+  - autodock-vina=1.2.3
   - pip
+
+  # ─── druGUI: fully self-contained ───────────────────────────────────────────
+  # No MGLTools, no OpenBabel, no AutoDock Tools!
+  # All ligand/receptor PDBQT preparation is handled internally by RDKit:
+  #   • RDKit computes Gasteiger partial charges
+  #   • RDKit generates 3D conformations (UFF optimization)
+  #   • RDKit handles SDF → PDBQT conversion natively
+  #
+  # Optional (for GPU-accelerated scoring):
+  #   • vina_split / split_openbabel for advanced workflows
+  # ────────────────────────────────────────────────────────────────────────────
   - pip:
     - pdbfixer=1.9
     - openmm=8.1.2

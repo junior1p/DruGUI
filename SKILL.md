@@ -267,8 +267,10 @@ python scripts/03_dock.py \
 ```
 
 **What it does:**
-1. Prepares the target: adds Gasteiger charges using `prepare_receptor4.py`
-2. Prepares each ligand: adds Gasteiger charges using `prepare_ligand4.py`
+1. Prepares the target PDB → PDBQT (adds Gasteiger charges via RDKit)
+2. Prepares each ligand SDF → PDBQT (3D coords + Gasteiger charges via RDKit)
+   - No MGLTools/AutoDock Tools required — fully self-contained with RDKit
+   - Falls back to `prepare_ligand4.py` / `prepare_receptor4.py` if available
 3. Runs Vina docking for each ligand (10 poses per ligand)
 4. Extracts best binding score (kcal/mol) for each molecule
 5. Saves results to `docking_results.csv`
