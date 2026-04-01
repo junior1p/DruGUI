@@ -11,10 +11,10 @@
 
 
 \author{
-Max$^{1,2}$, \textbf{Claw 🐞}$^{2}$ \\
-\\
-\small $^{1}$ BioTender, Online \\
-\small $^{2}$ Claw4S Conference, OpenClaw Agent \\
+Max$^{1,2}$, Claw$^{2,3}$ \\\\
+\small $^{3}$ OpenClaw Agent \\\\
+\small $^{1}$ BioTender, Online \\\\
+\small $^{2}$ Claw4S Conference, OpenClaw Agent \\\\
 \small \texttt{junioryu607@gmail.com}
 }
 
@@ -49,7 +49,7 @@ DruGUI implements an 8-step pipeline (Figure~\ref{fig:arch}) that processes prot
 
 \begin{figure}[htbp]
 \centering
-\fbox{\includegraphics[width=0.9\textwidth]{pipeline_diagram.pdf}}
+\fbox{\includegraphics[width=0.9\textwidth]{figures/fig5_pipeline_timing.png}}
 \caption{DruGUI pipeline architecture. Input PDB ID and SMILES pass through 8 stages to produce a ranked hit list with ADMET and synthesis accessibility scores.}
 \label{fig:arch}
 \end{figure}
@@ -98,6 +98,13 @@ We evaluated DruGUI on EGFR (PDB: 6JX0), a clinically validated target for non-s
 
 All 53 valid molecules were processed in \textbf{28 seconds} on a standard 4-core workstation. The pipeline produced bit-identical results across two independent runs on the same machine, and results were reproducible on a different machine using the same pinned environment.
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/fig5_pipeline_timing.png}
+\caption{Pipeline per-step execution time for 53 molecules against EGFR (6JX0). Docking dominates at 18.5 s out of 26.1 s total.}
+\label{fig:timing}
+\end{figure}
+
 \subsection{Screening Results}
 
 \begin{table}[htbp]
@@ -120,6 +127,34 @@ All 53 valid molecules were processed in \textbf{28 seconds} on a standard 4-cor
 \end{table}
 
 The known EGFR inhibitor AZD3759 was correctly ranked at the top (composite score 0.926), demonstrating that DruGUI's scoring captures meaningful structure-activity relationships. Four additional drug-like molecules (ZM43, ZM37, ZM9, Osimertinib) also appear in the top 5, all with favorable drug-like properties (MW < 350, LogP < 3, TPSA < 100, hERG LOW risk, SA score < 2.0).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig1_top10_composite.png}
+\caption{Top 10 candidates ranked by DruGUI's composite score. AZD3759 (red) ranks first, followed by novel drug-like molecules. Known EGFR inhibitors are highlighted in red.}
+\label{fig:top10}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{figures/fig2_vina_distribution.png}
+\caption{Vina score distribution for 53 screened molecules. Known EGFR inhibitors (red) cluster at more negative scores (tighter binding), while the activity threshold of $-7.0$ kcal/mol correctly identifies AZD3759 as the strongest binder.}
+\label{fig:vina_dist}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/fig3_admet_mw_logp.png}
+\caption{ADMET property space: molecular weight (MW) vs LogP for all 53 candidates. Circle markers pass Lipinski's rule of five; crosses fail. Red = known EGFR drugs; blue = screened candidates. Most candidates lie within the drug-like region (MW < 500, LogP < 5).}
+\label{fig:admet}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig4_sa_radar.png}
+\caption{Left: Synthetic Accessibility (SA) scores for the top 10 candidates. All top-ranked molecules have SA $\leq$ 2.0 (easily synthesizable). Right: Radar chart comparing AZD3759, Gefitinib, and Erlotinib across four normalized score dimensions (Vina, ADMET, Lipinski compliance, and SA).}
+\label{fig:sa_radar}
+\end{figure}
 
 \subsection{Reproducibility Verification}
 
